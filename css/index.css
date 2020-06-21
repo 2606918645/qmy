@@ -1,0 +1,261 @@
+/*页面整体采用凝胶布局和表格布局 定位方式有绝对定位和固定定位*/
+body {
+  background-color: rgb(244,244,244);
+  background: url(../img/背景1.jpg) no-repeat center 0;
+  background-size: cover;
+}
+
+/*页眉区固定定位 宽度100% 高度固定 居中 z-index设置使顶部导航栏始终显示在最上方*/
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 1024;
+}
+
+/*无序列表外层的div 居中 高度固定 内部文本垂直水平居中*/
+.header-list {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-list-ul {
+  margin-top: 0px;
+}
+
+/*无序列表项横向展示 字体大小为15px 不显示列表项前面的圆点*/
+.header-list-li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  list-style: none;
+}
+
+/*设置列表项正常显示时的颜色*/
+.header-title:visited {
+  color: rgb(38,114,250);
+}
+
+/*列表项中的链接宽度固定 颜色为Gray 去除下划线*/
+.header-list-li a {
+  display: inline-block;
+  width: 150px;
+  color: Gray;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*列表项中的链接hover：改变文字颜色*/
+.header-list-li a:hover {
+  color: rgb(38,114,250);
+}
+
+/*隐藏列表 绝对定位*/
+.header-list-li-ul {
+  display: none;
+  position: absolute;
+  padding-left: 0px;
+  z-index: 200;
+}
+
+/*顶部导航栏列表项hover：显示隐藏列表*/
+.header-list-li:hover .header-list-li-ul {
+  display: block;
+}
+
+/*去除隐藏列表项的样式重新设置*/
+.header-list-li-ul-li {
+  list-style: none;
+  z-index: 100;
+  background-color: #fff;
+}
+
+/*主体内容区宽度固定 高度自适应 居中 背景色为白色 显示边框*/
+#content {
+  width: 600px;
+  min-width: 600px;
+  height: auto;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 1px solid #408080;
+}
+
+/*主体内容区上半部分宽度固定 高度固定 显示底部边框*/
+#contents {
+  width: 600px;
+  height: 70px;
+  border-bottom: 5px solid #408080;
+}
+
+/*上半部分左侧 宽度固定 高度固定 绝对定位*/
+#contentsl {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 32px;
+  color: #408080;
+}
+
+/*上半部分右侧 宽度固定 高度固定 绝对定位*/
+#contentsr {
+  width: 360px;
+  height: 40px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 170px;
+  font-size: 14px;
+  color: #408080;
+}
+
+/*四叶草照片div 宽度固定 高度固定 绝对定位*/
+#contentsr-img {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  margin-left: 530px;
+  margin-top: 25px;
+}
+
+/*主体内容区下半部分宽度固定*/
+#contentx {
+  width: 600px;
+}
+
+/*主体内容区标签 宽度固定 高度固定 文本垂直水平居中 左上角和右上角为圆角 字体加粗*/
+.contentx-title {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #408080;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 6px 6px 0px 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/*主体内容区表格外部的div 宽度固定 显示上边框和左边框*/
+.contentx-des {
+  width: 550px;
+  margin-left: 30px;
+  margin-top: 0px;
+  border-top: 2px solid #408080;
+  border-left: 1px solid #D9B300;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-1 {
+  height: 180px;
+}
+
+/*主体内容区表格 绝对定位 设置边距为14px*/
+.content-ta {
+  font-size: 13px;
+  color: #4F4F4F;
+  border-collapse: separate;
+  border-spacing: 14px;
+  position: absolute;
+}
+
+/*主体内容区表格 绝对定位 设置边距为14px*/
+.content-ta1 {
+  display: table;
+  font-size: 13px;
+  color: #4F4F4F;
+  border-collapse: separate;
+  border-spacing: 14px;
+  position: absolute;
+}
+
+/*主体内容区表格行*/
+.tabrow {
+  display: table-row;
+}
+
+/*主体内容区表格元素*/
+.tabcell {
+  display: table-cell;
+}
+
+/*简历照片div 高度、宽度固定 绝对定位*/
+#contentx-des1-img {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 430px;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-2 {
+  height: 120px;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-3 {
+  height: 180px;
+}
+
+/*主体内容区表格里的链接改变字体颜色 去除下划线*/
+.contentx-des table tr td a {
+  color: #4F4F4F;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*主体内容区表格里的链接hover：改变字体颜色*/
+.contentx-des table tr td a:hover {
+  color: rgb(38,114,250);
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-4 {
+  height: 110px;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-5 {
+  height: 110px;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-6 {
+  height: 180px;
+}
+
+/*主体内容区表格外部的div 高度固定*/
+#contentx-des-7 {
+  height: 150px;
+}
+
+/*保持最后一项和底部边框的距离 高度、宽度固定*/
+.kongbai {
+  height: 20px;
+  width: 600px;
+}
+
+/*页脚区 宽度固定 高度固定 居中 内部文本为白色且垂直水平居中*/
+.footer {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #408080;
+}

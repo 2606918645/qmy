@@ -1,0 +1,16 @@
+/*页面整体采用凝胶布局和表格布局 定位方式有绝对定位和固定定位*/
+/*更换背景图片*/
+body {
+  background: url(../img/背景2.jpg) no-repeat  center 0;
+  background-size: cover;
+}
+
+/*改变主体内容区表格外部的div的高度*/
+#contentx-des-1 {
+  height: 600px;
+}
+
+/*设置表格内部文本水平居中*/
+.content-ta1 {
+  text-align: center;
+}

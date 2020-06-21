@@ -1,0 +1,58 @@
+/*页面整体采用凝胶布局和表格布局 定位方式有绝对定位和固定定位*/
+/*更换背景图片*/
+body {
+  background: url(../img/背景2.jpg) no-repeat  center 0;
+  background-size: cover;
+}
+
+/*设置视频区域宽度和高度*/
+#ode-to-joy {
+  width: 300px;
+  height: 170px;
+  outline: none;
+}
+
+/*改变主体内容区表格外部的div的高度*/
+#contentx-des-1 {
+  height: 220px;
+}
+
+/*设置视频区域宽度和高度*/
+#ideal-life {
+  width: 300px;
+  height: 170px;
+  outline: none;
+}
+
+/*改变主体内容区表格外部的div的高度*/
+#contentx-des-2 {
+  height: 220px;
+}
+
+/*设置表格内部链接的文字颜色 不显示下划线*/
+.contentx-des .content-ta1 .tabrow .tabcell a {
+  color: #4F4F4F;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*设置表格内部链接的hover：改变文字颜色*/
+.contentx-des .content-ta1 .tabrow .tabcell a:hover {
+  color: #4F9D9D;
+}
+
+/*设置视频描述div宽度、高度 左margin 绝对定位*/
+#tabcell-ode {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+/*设置视频描述div宽度、高度 左margin 绝对定位*/
+#tabcell-life {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  margin-left: 10px;
+}

@@ -1,0 +1,54 @@
+/*页面整体采用凝胶布局和表格布局 定位方式有绝对定位和固定定位*/
+/*更换背景图片*/
+body {
+  background: url(../img/背景2.jpg) no-repeat  center 0;
+  background-size: cover;
+}
+
+/*改变主体内容区表格外部的div的高度*/
+#contentx-des-1 {
+  height: 260px;
+}
+
+/*设置日期div 宽度高度固定*/
+.date {
+  width: 41px;
+  height: 34px;
+  float: left;
+}
+
+/*设置日期年 文本垂直水平居中*/
+.year {
+  height: 16px;
+  line-height: 16px;
+  background-color: #bda15d;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*设置日期月日 文本垂直水平居中 显示上边框*/
+.month-day {
+  height: 15px;
+  line-height: 15px;
+  background-color: #fff;
+  border-top: 1px solid #fff;
+  color: #bda15d;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*设置书名宽度高度 文本垂直水平居中*/
+.bookname {
+  width: 260px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #bda15d;
+  color: #fff;
+}
+
+/*改变主体内容区表格外部的div的高度*/
+#contentx-des-2 {
+  height: 160px;
+}

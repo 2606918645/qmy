@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>休闲生活</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css">
+		<link type="text/css" rel="stylesheet" href="css/relaxation.css">
+	</head>
+	<body>
+		<!--页眉区header 所有页面都一样 公共类header 宽度100%-->
+		<header class="header">
+			<!--所有页面都一样 公共类header-list 内容居中-->
+			<div class="header-list">
+				<!--所有页面都一样 公共类header-list-ul以及下面的header-list-li、header-title-->
+				<ul class="header-list-ul">
+					<li class="header-list-li">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="header-list-li">
+						<a href="works.html">综合作品展示</a>
+					</li>
+					<li class="header-list-li">
+						<a href="messages.html">留言板</a>
+					</li>
+					<li class="header-list-li">
+						<a href="relaxation.html" class="header-title">个人生活</a>
+						<!--所有页面都一样 公共类header-list-li-ul 隐藏导航栏-->
+						<ul class="header-list-li-ul">
+							<li class="header-list-li-ul-li">
+								<a href="relaxation.html" class="header-title">休闲</a>
+							</li>
+							<li class="header-list-li-ul-li">
+								<a href="interest.html">兴趣</a>
+							</li>
+							<li class="header-list-li-ul-li">
+								<a href="attention.html">近日关注</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--页眉区结束-->
+		<!--主体内容区 content 宽度固定 高度自适应 居中-->
+		<div id="content">
+			<!--上半部分：标题及中英文座右铭 宽度固定 高度固定 所有内容绝对定位-->
+			<div id="contents">
+				<div id="contentsl">
+				休闲生活 | 
+				</div>
+				<div id="contentsr">
+				足够尊重 足够努力 足够自信
+				</br>
+				respect effort confidence
+				</div>
+				<div id="contentsr-img">
+					<img src="./img/四叶草.jpg" width="50" height="40" alt="四叶草">
+				</div>
+			</div>
+			<!--上半部分结束-->
+			<!--下半部分：休闲生活展示 宽度固定 高度自适应-->
+			<div id="contentx">
+				<!--影视剧标签 标签样式所有页面一样 公共类contentx-title-->
+				<span class="contentx-title">
+				影视剧
+				</span>
+				<!--影视剧内容 表格布局：display:table、table-row、table-cell
+				样式和works.html messages.html interest.html页面一样 公共类contentx-des、content-ta1、tabrow、tabcell-->
+				<div id="contentx-des-1" class="contentx-des">
+					<div class="content-ta1">
+						<div class="tabrow">
+							<div class="tabcell"><video muted autoplay controls loop src="./video/欢乐颂.mp4" id="ode-to-joy"></video></div>
+							<div class="tabcell" id="tabcell-ode">
+								<a href="https://baike.so.com/doc/4903424-11492148.html" target="_blank">
+								五个性格迥异的女生，同住在一个名</br></br>
+								叫"欢乐颂"的中档小区22楼，她们因</br></br>
+								为邻居关系而相识相知，从互相揣测</br></br>
+								对方到渐渐接纳彼此并互相敞开心</br></br>
+								扉，在这一过程中齐心协力解决了彼</br></br>
+								此生活中发生的种种问题和困惑......</br></br>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<!--综艺节目标签 标签样式所有页面一样 公共类contentx-title-->
+				<span class="contentx-title">
+				综艺节目
+				</span>
+				<!--综艺节目内容 表格布局：display:table、table-row、table-cell
+				样式和works.html messages.html interest.html页面一样 公共类contentx-des、content-ta1、tabrow、tabcell-->
+				<div id="contentx-des-2" class="contentx-des">
+					<div class="content-ta1">
+						<div class="tabrow">
+							<div class="tabcell"><video muted autoplay controls loop src="./video/向往的生活.mp4" id="ideal-life"></video></div>
+							<div class="tabcell" id="tabcell-life">
+								<a href="https://baike.so.com/doc/24060436-24645604.html" target="_blank">
+								繁忙的生活给人们带来了压力与浮躁</br></br>
+								，越来越多的人们希望远离喧嚣，向</br></br>
+								往着从城市搬到农村，呼吸自然的空</br></br>
+								气，寻找内心的声音，《向往的生活</br></br>
+								》节目中主人公一起守拙归田园，为</br></br>
+								观众带来一幅自然和谐的生活画面......
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--保持最后一项和底部边框的距离 所有页面都一样 公共类kongbai-->
+				<div class="kongbai"></div>
+			</div>
+			<!--下半部分结束-->
+		</div>
+		<!--主体内容区结束-->
+		<!--页脚区footer 所有页面都一样 公共类footer 宽度固定 高度固定 居中-->
+		<footer>
+			<div class="footer">
+				@Zueler-qmy
+			</div>
+		</footer>
+		<!--页脚区结束-->
+	</body>
+</html>
